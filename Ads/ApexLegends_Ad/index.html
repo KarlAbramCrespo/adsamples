@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Apex Legends Ad</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="startBanner()">
+    <div id="main" class="absolute adsize" onclick="bannerClicked()">
+        <div id="characterSelectFrame" class="absolute adsize color1">
+            <div id = "smokeBG" class="absolute adsize "></div>
+            <div id = "apexLogo" class = "absolute adsize"></div>
+            <div id = "characterCont" class = "absolute adsize">
+                <div id = "wraithCharacterCont" class = "absolute adsize">
+                    <div id = "wraithPortrait" class = "characterPortrait absolute adsize"></div>
+                    <div class = "characterCopyCont absolute adsize">
+                        <div class = "characterCopy absolute">
+                            <span class = "characterName">WRAITH</span>
+                            <span class = "characterDesc">Interdimensional Skirmisher</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "pathfinderCharacterCont" class = "absolute adsize">
+                    <div id = "pathfinderPortrait" class = "characterPortrait absolute adsize"></div>
+                    <div class = "characterCopyCont absolute adsize">
+                        <div class = "characterCopy absolute">
+                            <span class = "characterName">PATHFINDER</span>
+                            <span class = "characterDesc">Forward Scout</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "cryptoCharacterCont" class = "absolute adsize">
+                    <div id = "cryptoPortrait" class = "characterPortrait absolute adsize"></div>
+                    <div class = "characterCopyCont absolute adsize">
+                        <div class = "characterCopy absolute">
+                            <span class = "characterName">CRYPTO</span>
+                            <span class = "characterDesc">Surveillance<br>Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = "footer" class = "absolute">
+                <div id = "footerCopy" class = "absolute">
+                    CHOOSE YOUR LEGEND
+                </div>
+                <div id = "characterSelectionCont" class = "">
+                    <div id = "wraithCont" class = "absolute btn">
+                        <div id = "wraithInactive" class = "absolute btn"></div>
+                        <div id = "wraithActive" class = "btnActive absolute btn"></div>
+                    </div>
+                    <div id = "pathfinderCont" class = "absolute btn">
+                        <div id = "pathfinderInactive" class = "absolute btn"></div>
+                        <div id = "pathfinderActive" class = "btnActive absolute btn"></div>
+                    </div>
+                    <div id = "cryptoCont" class = "absolute btn">
+                        <div id = "cryptoInactive" class = "absolute btn"></div>
+                        <div id = "cryptoActive" class = "btnActive absolute btn"></div>
+                    </div>
+                </div>
+                <div id = "battleBtn" class = "absolute"></div>
+            </div>
+        </div>
+        <div id="frame1" class="absolute adsize">
+            <div id="banner1" class="absolute adsize"></div>
+            <div id="banner2" class="absolute adsize"></div>
+            <div id="banner3" class="absolute adsize"></div>
+            <div id="apexIcon" class="absolute adsize"></div>
+        </div>
+    </div>
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

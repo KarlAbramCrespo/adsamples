@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSans-Regular.woff");
+}
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSans-Bold.woff");
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+
+.adSize {
+    width: 300px;
+    height: 250px;
+}
+
+.abso {
+    position: absolute;
+    
+}
+
+#border {
+    width: calc(300px - 2px);
+    height: calc(250px - 2px);
+    border: 1px solid #000;
+    pointer-events: none;
+}
+
+#main {
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#frame1 {
+    background-color: #000;
+    transition: transform 1s;
+}
+
+#samsungLogo {
+    left: 300px;
+    transition: transform 1s;
+}
+
+#galaxyBudsLogo {
+    left: -300px;
+    transition: transform 1s;
+}
+
+#carouselCont {
+}
+
+.slide {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.slide.zIndex {
+    z-index: 1;
+}
+
+.slide.transition {
+    transition: transform 0.5s;
+}
+
+#arrowLeft, #arrowRight {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#arrowLeft {
+    left: 11px;
+    top: 112px;
+}
+
+#arrowRight {
+    right: 9px;
+    top: 112px;
+}
+
+#arrowLeft > img {
+    transform: rotate(180deg);
+    left: 5px;
+}
+#arrowRight > img {
+    left: 5px;
+}
+
+#ctaCont {
+    padding: 5px 24px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    bottom: 22px;
+    right: 19px;
+    cursor: pointer;
+    
+    transition: 0.5s background-color, 0.5s color;
+}
+
+#ctaCont:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#cta {
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 14px;
+}
+
+.copyCont {
+    font-family: "OpenSansBold", sans-serif;
+    height: 44px;
+    width: 260px;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    font-size: 14px;
+    
+}
+
+.copyTransition {
+    transition: 0.5s opacity;
+}
+
+.copyTransitionDelayed {
+    transition: 0.5s opacity;
+    transition-delay: 0.5s
+}

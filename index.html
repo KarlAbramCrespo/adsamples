@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ads Collection 2020</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #iframeCont,
+        #iFrameButtonCont {
+            height: 100%;
+            width: 100%;
+        }
+
+        #iframeCont>iframe {
+            margin: 0 20px;
+            border: 0;
+            background-color: #fff;
+        }
+
+        #iFrameButtonCont>button {
+            width: 300px;
+            margin: 10px 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="iframeCont" class="flex">
+        <iframe id="ad_grandSeikoDiver" src="Ads/GrandSeiko_Diver/index.html" title="Grand Seiko Ad" width="300" height="250" scrolling="no"></iframe>
+
+        <iframe id="ad_samsungGalaxyBuds" src="Ads/Samsung_GalaxyBuds/index.html" title="Samsung Galaxy Buds" width="300" height="250" scrolling="no"></iframe>
+
+        <iframe id="ad_apexLegends" src="Ads/ApexLegends_Ad/index.html" title="Apex Legends" width="300" height="250" scrolling="no"></iframe>
+    </div>
+    <div id="iFrameButtonCont" class="flex">
+        <button id="ad1Btn" name="test">Refresh</button>
+        <button id="ad2Btn" name="test">Refresh</button>
+        <button id="ad3Btn" name="test">Refresh</button>
+
+    </div>
+    <div class="flex">
+        Disclaimer: These ads are developed with Karl Abram S. Crespo's imagination and skill during his free time. All assets and copy are gathered from the internet with some editing. Any likeness to any existing ads online are purely coincidence.
+    </div>
+
+    <script>
+        ad1Btn.addEventListener('click', function() {
+            document.getElementById("ad_grandSeikoDiver").src = document.getElementById("ad_grandSeikoDiver").src;
+        });
+        ad2Btn.addEventListener('click', function() {
+            document.getElementById("ad_samsungGalaxyBuds").src = document.getElementById("ad_samsungGalaxyBuds").src;
+        });
+        ad3Btn.addEventListener('click', function() {
+            document.getElementById("ad_apexLegends").src = document.getElementById("ad_apexLegends").src;
+        });
+
+    </script>
+</body>
+
+</html>

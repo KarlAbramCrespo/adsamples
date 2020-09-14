@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "TwCenMT";
+    src: url("../fonts/TwCenMTStd-MediumCond.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TwCenMT";
+    src: url("../fonts/TwCenMTStd-BoldCond.woff");
+    font-weight: 800;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    font-family: "TwCenMT", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.adsize {
+    height: 250px;
+    width: 300px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.noInteraction {
+    pointer-events: none;
+}
+
+#main {
+    background-color: #000000;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#frame1 {
+    background-color: #000000;
+}
+
+#characterSelectFrame {
+    transition: background-color 0.3s;
+}
+
+#characterSelectFrame.color1 {
+    background-color: #4b246b;
+}
+
+#characterSelectFrame.color2 {
+    background-color: #22538a;
+}
+
+#characterSelectFrame.color3 {
+    background-color: #3f4713;
+}
+
+#smokeBG {
+    
+}
+
+#footer {
+    bottom: 0;
+    height: 60px;
+    width: 300px;
+}
+
+#footerCopy {
+    left: 26px;
+    top: 4px;
+}
+
+#apexLogo {
+    
+}
+
+#battleBtn {
+    width: 121px;
+    height: 49px;
+    right: 4px;
+    bottom: 3px;
+}
+
+#characterSelectionCont {
+    
+}
+#characterSelectionCont .btn {
+    height: 36px;
+    width: 65px;
+}
+
+#cryptoCont {
+    left: 118px;
+    bottom: 3px;
+}
+
+#pathfinderCont {
+    left: 62px;
+    bottom: 3px;
+}
+
+#wraithCont {
+    left: 6px;
+    bottom: 3px;
+}
+
+.characterPortrait {
+    left: -300px;
+}
+
+.characterCopyCont {
+    left: 300px;
+}
+
+.characterCopy {
+    text-align: right;
+    right: 16px;
+    top: 106px;
+    width: 140px;
+}
+
+.characterCopy > * {
+    display: block;
+}
+
+.characterName {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.characterDesc {
+    font-size: 24px;
+    margin-top: -1px;
+    line-height: 0.9;
+    margin-right: 1px;
+}
+
